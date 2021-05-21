@@ -6,6 +6,8 @@ window.onscroll = function(){
 		for(i = 0; i < x.length; i++){
 			x[i].style.boxShadow = "none";
 		}
+
+
 	}
 	else{
 		let x = document.getElementsByClassName("menuElement");
