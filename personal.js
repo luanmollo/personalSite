@@ -1,3 +1,5 @@
+window.onload = toEnglish();
+
 window.onscroll = function(){
 	if(window.scrollY < 747){
 		let x = document.getElementsByClassName("menuElement");
@@ -64,4 +66,96 @@ document.addEventListener("click", function(e){
 
 	}
 });
+
+//contenido en ingles y español
+
+let english = document.getElementById("languajeEnglish");
+english.addEventListener("click", toEnglish);
+
+let spanish = document.getElementById("languajeSpanish");
+spanish.addEventListener("click", toSpanish);
+
+function toEnglish(){
+	//estilos
+	document.getElementById("languajeEnglish").style.backgroundColor = "rgba(255,255,255,0.5)";
+	document.getElementById("languajeEnglish").style.borderRadius = "24px";
+	document.getElementById("languajeEnglish").style.padding = "10px";
+
+	document.getElementById("languajeSpanish").style.backgroundColor = "transparent";
+	document.getElementById("languajeSpanish").style.borderRadius = "24px";
+	document.getElementById("languajeSpanish").style.padding = "10px";
+
+	//cambio de idioma
+	document.getElementsByClassName("menuElement")[0].innerHTML = "About";
+	document.getElementsByClassName("menuElement")[1].innerHTML = "Projects";
+	document.getElementsByClassName("menuElement")[2].innerHTML = "Skills";
+	document.getElementsByClassName("menuElement")[3].innerHTML = "Contact";
+
+	document.getElementById("shortDescription").innerHTML = "Full Stack Dev";
+
+	document.getElementById("about").innerHTML = "About";
+	document.getElementById("aboutText").innerHTML = "Hi! I'm Luan, a Full Stack Developer from Mendoza, Argentina.";
+
+	document.getElementById("projects").innerHTML = "Projects";
+	document.getElementById("calculatorTitle").innerHTML = "2 Terms Calculator";
+	document.getElementById("calculatorText").innerHTML = "In this project, I used HTML and CSS with Flexbox skills for layout and styles, and JavaScript Vanilla for calculator functions.";
+	document.getElementById("weeklyBudgetTitle").innerHTML = "Weekly Budget";
+	document.getElementById("weeklyBudgetText").innerHTML = "In this project, I used HTML and CSS with Flexbox skills for layout and styles, and JavaScript Vanilla for calculator functions.";
+
+	document.getElementById("skills").innerHTML = "Skills";
+	document.getElementById("skillsText").innerHTML = "This is my tech stack:";
+
+	document.getElementById("contact").innerHTML = "Contact";
+	document.getElementById("contactText").innerHTML = "Please feel free to get in touch with me! You can find me on:";
+
+	document.getElementById("footerText").innerHTML = "Made with love ♥ by Luan";
+
+	//mobile
+	document.getElementsByClassName("menuElementMobile")[0].innerHTML = "About";
+	document.getElementsByClassName("menuElementMobile")[1].innerHTML = "Projects";
+	document.getElementsByClassName("menuElementMobile")[2].innerHTML = "Skills";
+	document.getElementsByClassName("menuElementMobile")[3].innerHTML = "Contact";
+	document.getElementsByClassName("menuElementMobile")[4].innerHTML = "↑";
+}
+
+function toSpanish(){
+	//estilos
+	document.getElementById("languajeSpanish").style.backgroundColor = "rgba(255,255,255,0.5)";
+	document.getElementById("languajeSpanish").style.borderRadius = "24px";
+	document.getElementById("languajeSpanish").style.padding = "10px";
+
+	document.getElementById("languajeEnglish").style.backgroundColor = "transparent";
+
+	//cambio de idioma
+	document.getElementsByClassName("menuElement")[0].innerHTML = "Sobre mí";
+	document.getElementsByClassName("menuElement")[1].innerHTML = "Proyectos";
+	document.getElementsByClassName("menuElement")[2].innerHTML = "Habilidades";
+	document.getElementsByClassName("menuElement")[3].innerHTML = "Contacto";
+
+	document.getElementById("shortDescription").innerHTML = "Desarrollador Full Stack";
+
+	document.getElementById("about").innerHTML = "Sobre mí";
+	document.getElementById("aboutText").innerHTML = "Hola! Soy Luan, un Desarrollador Web Full Stack de Mendoza, Argentina.";
+
+	document.getElementById("projects").innerHTML = "Proyectos";
+	document.getElementById("calculatorTitle").innerHTML = "Calculadora de 2 términos";
+	document.getElementById("calculatorText").innerHTML = "En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y los estilos, y JavaScript Vanilla para las funcionalidades de la calculadora.";
+	document.getElementById("weeklyBudgetTitle").innerHTML = "Presupuesto semanal";
+	document.getElementById("weeklyBudgetText").innerHTML = "En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y diseño, y JavaScript Vanilla para las funcionalidades de la calculadora.";
+
+	document.getElementById("skills").innerHTML = "Habilidades";
+	document.getElementById("skillsText").innerHTML = "Este es mi stack tecnológico:";
+
+	document.getElementById("contact").innerHTML = "Contacto";
+	document.getElementById("contactText").innerHTML = "Por favor siéntete libre de ponerte en contacto conmigo! Puedes encontrarme en:";
+	
+	document.getElementById("footerText").innerHTML = "Hecho con amor ♥ por Luan";
+
+	//mobile
+	document.getElementsByClassName("menuElementMobile")[0].innerHTML = "Sobre mí";
+	document.getElementsByClassName("menuElementMobile")[1].innerHTML = "Proyectos";
+	document.getElementsByClassName("menuElementMobile")[2].innerHTML = "Habilidades";
+	document.getElementsByClassName("menuElementMobile")[3].innerHTML = "Contacto";
+	document.getElementsByClassName("menuElementMobile")[4].innerHTML = "↑";
+}
 

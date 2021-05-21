@@ -7,33 +7,40 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<div id="languajeButton">
+		<span id="languajeEnglish" onmouseover="this.style.cursor='pointer'">EN</span>
+		<span>/</span>
+		<span id="languajeSpanish" onmouseover="this.style.cursor='pointer'">ES</span>
+	</div>
 	<div id="principal">	
 		<div id="header">
 			<div id="menu">
-				<a href="#about" class="menuElement">About</a>
-				<a href="#projects" class="menuElement">Projects</a>
-				<a href="#skills" class="menuElement">Skills</a>
-				<a href="#contact" class="menuElement">Contact</a>
+				<a href="#about" class="menuElement"></a>
+				<a href="#projects" class="menuElement"></a>
+				<a href="#skills" class="menuElement"></a>
+				<a href="#contact" class="menuElement"></a>
 			</div>
+			
 		</div>
+		
 		<div id="profile">
 			<img id="profileImage" src="images/profileImage.jpg"/>
 			<div id="personalData">
 				<h1 id="name">Luan Mollo</h1>
-				<p id="shortDescription">Full Stack Dev</p>
+				<p id="shortDescription"></p>
 			</div>
 		</div>
 	</div>
 	<div id="main">
 		<div class="section">
-			<h2 id="about">About</h2>
-			<p >Hola! Soy Luan, un Desarrollador Web Full Stack de Mendoza, Argentina.</p>
+			<h2 id="about"></h2>
+			<p id="aboutText"></p>
 		</div>
 		<div class="section">
-			<h2 id="projects">Projects</h2>
+			<h2 id="projects"></h2>
 			<div class="project">
 				<div class="projectTitle">
-					<h3>2 Terms Calculator</h3>
+					<h3 id="calculatorTitle"></h3>
 				</div>
 				<div class="galery">
 					<img class="projectImage" src="images/calculator1.jpg"/>
@@ -46,11 +53,11 @@
 						</a>
 					</div>
 				</div>
-				<p>En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y diseño, y JavaScript Vanilla para las funcionalidades de la calculadora.</p>
+				<p id="calculatorText"></p>
 			</div>
 			<div class="project">
 				<div class="projectTitle">
-					<h3>Presupuesto semanal</h3>
+					<h3 id="weeklyBudgetTitle"></h3>
 				</div>
 				<div class="galery">
 					<img class="projectImage" src="images/weeklyBudget1.jpg"/>
@@ -63,16 +70,16 @@
 						</a>
 					</div>
 				</div>
-				<p>En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y diseño, y JavaScript Vanilla para las funcionalidades de la calculadora.</p>
+				<p id="weeklyBudgetText"></p>
 			</div>
 		</div>
 		<div class="section">	
-			<h2 id="skills">Skills</h2>
-			<p>Este es mi stack:</p>
+			<h2 id="skills"></h2>
+			<p id="skillsText"></p>
 		</div>
 		<div class="section">	
-			<h2 id="contact">Contact</h2>
-			<p>Please feel free to get in touch with me! You can find me on:</p>
+			<h2 id="contact"></h2>
+			<p id="contactText"></p>
 			<div>	
 				<a href="https://www.linkedin.com/in/luan-mollo-17b565142/" target="_blank" class="links">
 					<img id="iconFooter" src="images/linkedin.png"/>
@@ -87,15 +94,15 @@
 		</div>
 	</div>
 	<div id="footer">
-		<span id="footerText">Made with love ♥ by Luan</span>
+		<span id="footerText"></span>
 	</div>
 	<div id="mobileNav">	
 		<div id="menuMobile">
-			<a href="#about" class="menuElementMobile">About</a>
-			<a href="#projects" class="menuElementMobile">Projects</a>
-			<a href="#skills" class="menuElementMobile">Skills</a>
-			<a href="#contact" class="menuElementMobile">Contact</a>
-			<a href="#principal" class="menuElementMobile">↑</a>
+			<a href="#about" class="menuElementMobile"></a>
+			<a href="#projects" class="menuElementMobile"></a>
+			<a href="#skills" class="menuElementMobile"></a>
+			<a href="#contact" class="menuElementMobile"></a>
+			<a href="#principal" class="menuElementMobile"></a>
 		</div>
 		<div id="mobileNavIcon" onmouseover="this.style.cursor='pointer'">
 			<img src="images/plus.png">
