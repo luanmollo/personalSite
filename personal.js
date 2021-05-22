@@ -1,4 +1,9 @@
-window.onload = toEnglish();
+window.onload = toEnglish(), setResolution();
+
+
+function setResolution(){
+	document.getElementById("initial").style.height = window.screen.height + "px";
+}
 
 window.onscroll = function(){
 	if(window.scrollY < 747){
@@ -160,4 +165,3 @@ function toSpanish(){
 	document.getElementsByClassName("menuElementMobile")[3].innerHTML = "Contacto";
 	document.getElementsByClassName("menuElementMobile")[4].innerHTML = "↑";
 }
-
