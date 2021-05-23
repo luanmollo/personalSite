@@ -12,8 +12,6 @@ window.onscroll = function(){
 			x[i].style.boxShadow = "none";
 		}
 
-		document.getElementById("languajeEnglish").style.boxShadow = "none";
-		document.getElementById("languajeSpanish").style.boxShadow = "none";
 	}
 	else{
 		let x = document.getElementsByClassName("menuElement");
@@ -21,8 +19,7 @@ window.onscroll = function(){
 			x[i].style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,0.8)";
 		}
 
-		document.getElementById("languajeEnglish").style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)";
-		document.getElementById("languajeSpanish").style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)";
+	
 	}
 }
 
@@ -44,8 +41,9 @@ function menuMobile(){
 		y.style.bottom = "15%";
 		y.style.right = "5%";
 		y.style.backgroundColor = "rgba(255,255,255,0.5)";
+		y.style.backdropFilter = "blur(3px)"
 		y.style.borderRadius = "24px";
-		y.style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)"
+		y.style.boxShadow = "inset 0 0 0 1px rgba(171,178,185,1)"
 		y.style.zIndex= "2";
 
 		c.style.transform = "rotate(45deg)";
@@ -53,6 +51,7 @@ function menuMobile(){
 
 		for(i = 0; i < w.length; i++){
 			w[i].style.display = "inline";
+			w[i].style.boxShadow = "inset 0 0 0 1px rgba(171,178,185,1)";
 		}
 	}
 	else{
@@ -102,10 +101,15 @@ function toEnglish(){
 	document.getElementById("languajeEnglish").style.backgroundColor = "rgba(255,255,255,0.5)";
 	document.getElementById("languajeEnglish").style.borderRadius = "24px";
 	document.getElementById("languajeEnglish").style.padding = "10px";
+	document.getElementById("languajeEnglish").style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)";
+	document.getElementById("languajeEnglish").style.backdropFilter = "blur(2px)"
 
 	document.getElementById("languajeSpanish").style.backgroundColor = "transparent";
 	document.getElementById("languajeSpanish").style.borderRadius = "24px";
 	document.getElementById("languajeSpanish").style.padding = "10px";
+	document.getElementById("languajeSpanish").style.boxShadow = "none";
+	document.getElementById("languajeSpanish").style.backdropFilter = "none"
+
 
 	//cambio de idioma
 	document.getElementsByClassName("menuElement")[0].innerHTML = "About";
@@ -125,7 +129,7 @@ function toEnglish(){
 	document.getElementById("weeklyBudgetText").innerHTML = "In this project, I used HTML and CSS with Flexbox skills for layout and styles, and JavaScript Vanilla for calculator functions.";
 
 	document.getElementById("skills").innerHTML = "Skills";
-	document.getElementById("skillsText").innerHTML = "This is my tech stack:";
+	document.getElementById("skillsText").innerHTML = "This is my tech stack:<br/>•HTML5<br/>•CSS3<br/>•JavaScript<br/>•JAVA SE";
 
 	document.getElementById("contact").innerHTML = "Contact";
 	document.getElementById("contactText").innerHTML = "Please feel free to get in touch with me! You can find me on:";
@@ -145,8 +149,13 @@ function toSpanish(){
 	document.getElementById("languajeSpanish").style.backgroundColor = "rgba(255,255,255,0.5)";
 	document.getElementById("languajeSpanish").style.borderRadius = "24px";
 	document.getElementById("languajeSpanish").style.padding = "10px";
+	document.getElementById("languajeSpanish").style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)";
+	document.getElementById("languajeSpanish").style.backdropFilter = "blur(2px)"
+
 
 	document.getElementById("languajeEnglish").style.backgroundColor = "transparent";
+	document.getElementById("languajeEnglish").style.boxShadow = "none";
+	document.getElementById("languajeEnglish").style.backdropFilter = "none"
 
 	//cambio de idioma
 	document.getElementsByClassName("menuElement")[0].innerHTML = "Sobre mí";
@@ -166,7 +175,7 @@ function toSpanish(){
 	document.getElementById("weeklyBudgetText").innerHTML = "En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y diseño, y JavaScript Vanilla para las funcionalidades de la calculadora.";
 
 	document.getElementById("skills").innerHTML = "Habilidades";
-	document.getElementById("skillsText").innerHTML = "Este es mi stack tecnológico:";
+	document.getElementById("skillsText").innerHTML = "Este es mi stack tecnológico:<br/>•HTML5<br/>•CSS3<br/>•JavaScript<br/>•JAVA SE";
 
 	document.getElementById("contact").innerHTML = "Contacto";
 	document.getElementById("contactText").innerHTML = "Por favor siéntete libre de ponerte en contacto conmigo! Puedes encontrarme en:";
