@@ -6,19 +6,23 @@ function setResolution(){
 }
 
 window.onscroll = function(){
-	if(window.scrollY < 747){
+	if(window.scrollY < (window.screen.height - 38)){
 		let x = document.getElementsByClassName("menuElement");
 		for(i = 0; i < x.length; i++){
 			x[i].style.boxShadow = "none";
 		}
 
-
+		document.getElementById("languajeEnglish").style.boxShadow = "none";
+		document.getElementById("languajeSpanish").style.boxShadow = "none";
 	}
 	else{
 		let x = document.getElementsByClassName("menuElement");
 		for(i = 0; i < x.length; i++){
 			x[i].style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,0.8)";
 		}
+
+		document.getElementById("languajeEnglish").style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)";
+		document.getElementById("languajeSpanish").style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)";
 	}
 }
 
@@ -29,6 +33,7 @@ c.addEventListener("click", menuMobile);
 function menuMobile(){
 	let y = document.getElementById("menuMobile");
 	let w = document.getElementsByClassName("menuElementMobile");
+	let z = document.getElementById("mobileNavImage");
 
 	if(y.style.display == "none" || y.style.display == false){
 		console.log("me muestro");
@@ -40,7 +45,11 @@ function menuMobile(){
 		y.style.right = "5%";
 		y.style.backgroundColor = "rgba(255,255,255,0.5)";
 		y.style.borderRadius = "24px";
+		y.style.boxShadow = "inset 0 0 0 0.5px rgba(171,178,185,1)"
 		y.style.zIndex= "2";
+
+		c.style.transform = "rotate(45deg)";
+		c.style.transitionDuration = "0.3s"; 
 
 		for(i = 0; i < w.length; i++){
 			w[i].style.display = "inline";
@@ -49,6 +58,9 @@ function menuMobile(){
 	else{
 		console.log("me oculto");
 		y.style.display = "none";
+
+		c.style.transform = "rotate(0deg)";
+		c.style.transitionDuration = "0.3s"; 
 	}
 }
 
@@ -60,6 +72,8 @@ for(i = 0; i < b.length; i++){
 function moveMobile(){
 	let z = document.getElementById("menuMobile");
 	z.style.display = "none";
+	c.style.transform = "rotate(0deg)";
+	c.style.transitionDuration = "0.3s"; 
 }
 
 
@@ -70,7 +84,8 @@ document.addEventListener("click", function(e){
 	else{
 		let y = document.getElementById("menuMobile");
 		y.style.display = "none";
-
+		c.style.transform = "rotate(0deg)";
+		c.style.transitionDuration = "0.3s"; 
 	}
 });
 
