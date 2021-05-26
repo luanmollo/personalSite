@@ -127,6 +127,8 @@ function toEnglish(){
 	document.getElementById("calculatorText").innerHTML = "In this project, I used HTML and CSS with Flexbox skills for layout and styles, and JavaScript Vanilla for calculator functions.";
 	document.getElementById("weeklyBudgetTitle").innerHTML = "Weekly Budget";
 	document.getElementById("weeklyBudgetText").innerHTML = "In this project, I used HTML and CSS with Flexbox skills for layout and styles, and JavaScript Vanilla for calculator functions.";
+	document.getElementById("ticTacToeTitle").innerHTML = "Tic Tac Toe";
+	document.getElementById("ticTacToeText").innerHTML = "In this project, I used HTML and CSS with Flexbox skills for layout and styles, and JavaScript Vanilla for game functions.";
 
 	document.getElementById("skills").innerHTML = "Skills";
 	document.getElementById("skillsText").innerHTML = "This is my tech stack:<br/>•HTML5<br/>•CSS3<br/>•JavaScript<br/>•JAVA SE";
@@ -173,6 +175,8 @@ function toSpanish(){
 	document.getElementById("calculatorText").innerHTML = "En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y los estilos, y JavaScript Vanilla para las funcionalidades de la calculadora.";
 	document.getElementById("weeklyBudgetTitle").innerHTML = "Presupuesto semanal";
 	document.getElementById("weeklyBudgetText").innerHTML = "En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y diseño, y JavaScript Vanilla para las funcionalidades de la calculadora.";
+	document.getElementById("ticTacToeTitle").innerHTML = "TaTeTi";
+	document.getElementById("ticTacToeText").innerHTML = "En este proyecto utilicé conocimientos de HTML y CSS con FlexBox para el maquetado y diseño, y JavaScript Vanilla para las funcionalidades del juego.";
 
 	document.getElementById("skills").innerHTML = "Habilidades";
 	document.getElementById("skillsText").innerHTML = "Este es mi stack tecnológico:<br/>•HTML5<br/>•CSS3<br/>•JavaScript<br/>•JAVA SE";
