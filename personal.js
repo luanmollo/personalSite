@@ -2,7 +2,7 @@ window.onload = toEnglish(), setResolution();
 
 
 function setResolution(){
-	document.getElementById("initial").style.height = window.screen.height + "px";
+	document.getElementById("initial").style.height = window.innerHeight + "px";
 }
 
 window.onscroll = function(){
@@ -21,6 +21,12 @@ window.onscroll = function(){
 
 	
 	}
+}
+
+document.getElementById("arrowDown").addEventListener("click", scrollDown);
+
+function scrollDown(){
+	window.scroll(0, window.innerHeight);
 }
 
 let c = document.getElementById("mobileNavIcon");
